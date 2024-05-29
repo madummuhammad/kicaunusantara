@@ -1,0 +1,235 @@
+[v3.0.0] - 2024-04-27
+Fixed 
+ - Cannot save new categories when adding translations
+ - The image display is broken when editing a translation category where the main category image is deleted
+ - Remove multiple tags
+ - Notification when entering email in newsletter
+ - Video Post
+ - Audio Post
+ 
+Changed
+ - Update to Laravel 11
+ - Change package from rahulhaque/laravel-filepond to sopamo/laravel-filepond"
+
+[v2.3.1] - 2024-01-10
+Fixed
+ - The process of resizing post thumbnail images, audio and video.
+ - Open graph image post/audio/video.
+ - Category thumbnails are not displayed.
+ - Open Graph Image image not displayed.
+ - Post subcategories when editing posts.
+ - Problem editing the date when in a language other than English
+ - Other issues.
+
+Changed
+ - The default value of the post_source table posts field from empty string to nullable.
+ - The user interface displays the settings menu as a submenu.
+ - Other minor changes
+
+[v2.3.0] - 2023-12-18
+Fixed
+ - Audio posts during updates.
+ - Submenu navigation.
+ - Performance issues based on PageSpeed Insights.
+ - Authentication message on failed login.
+ - Reset password message that is not visible.
+ - Video & Audio player not appearing on adding Video Post Translations.
+ - File manager menu.
+ - Other issues.
+
+Added
+ - Multilingual translation in the contact description.
+ - Support for image URLs for post thumbnails, page thumbnails, video cover thumbnails, and audio cover thumbnails.
+ - Recommendation for image size: 763x414px (16:9) on the post thumbnail upload form page.
+ - Edit date and time of publishing for video and audio posts.
+ - Support for sidebar and footer settings applied to all pages.
+ - Addition of a theme page for general layout.
+ - Like count description above the post title in the post listing.
+
+Changed
+ - Thumbnail image size for posts, categories, video covers, and audio covers (recommended size with a 16:9 ratio).
+ - Theme color changed to red (#EB0000).
+ - Update FontAwesome to version 6.5.1.
+ - Redesign of the logo image, favicon, OG cover, dashboard logo, and login logo.
+ - Redesign of the default no-image image.
+ - List icons on the icon picker using FontAwesome 6.5.1, displaying only a few icons. Additional available icons can be added manually.
+ - Stylish appearance for the Item Menu Manager.
+ - Restore the group column on the Translations table that was removed in the previous version.
+ - Change the favicon appearance and reduce the list of favicons in the HTML meta.
+ - Frontend theme CSS styling.
+ - Limit post title rows to 2 in the content body's post list and 1 row for post titles in sections, sidebars, and footers.
+ - Replace the love symbol with the like symbol for liking posts on the single post page.
+ - Other changes.
+
+Removed
+ - Ionicons
+ - The love icon to like in the list of posts.
+ - The "more" button to read further in the listing of posts.
+
+[v2.2.1] - 2023-11-20
+Fixed
+- Height of the Tinymce Text Editor Source Code field
+- Loading sign during the contact message sending process
+- Thumbnail page image not displayed
+- Export and Import database backup files
+
+Added
+- Added language translation for notifications when contact messages are successfully sent
+- Validate the contact message form
+- Add a first name to the notification when sending a contact message successfully
+- Add date and time edit input on the Edit Post
+- Added draft and scheduled icons on the All Posts page in the Admin Panel
+- Added favicon logo invocation script
+- Post thumbnail caption
+- The number of post comments in the comment_count column in the posts table
+
+Changed
+- Update TinyMCE version 6.4.2 to 6.7.2 
+- TinyMce skin name for theme light from magz to tinymce-5
+- Remove elevation-3 on brand-image to remove shadow on logo
+- Update sweetalert2 v11.4.0 to sweetalert2 v11.9.0
+- Change sweetalert invocation script from swal() to Swal.fire() in e-magz.js file
+- Changed the style call from sweetalert2-theme-bootstrap-4/bootstrap-4.min.css to sweetalert2/sweetalert2.min.css in frontend theme
+- Changed the script to display the logo in Helpers/ImageHelper.php
+- Added to the scope query to prevent posts from displaying articles created with a date and time that exceeds the current date and time.
+- Changed the script to display the logo in the footer
+- Changed the script to display the logo in the header
+
+[v2.2.0] - 20203-10-27
+Fixed
+- Sidebar Image Ads cannot be changed.
+- "Undefined array key "[language code]"" error when opening the Footer layout page
+- some phrases are not translated
+- Minor adjustments to the CSS of the web theme
+- The other minor mistakes
+
+Added
+- Comment.
+
+Changed
+- Web theme style: Bootstrap v5.1.3 to v5.3.2
+
+[v2.1.0] - 2023-10-07
+Fixed
+- Pages cannot be deleted
+- Email Subscription
+
+Added
+- table subscribers
+
+Changed
+- Removed use of MailChimp
+
+[v2.0.2] - 2023-09-21
+Fixed
+- Category images are deleted when category data is updated
+- The Google Analytics Global site tag script does not appear
+- download export file data
+- An error appears on the site page when selecting a new language option
+
+Added
+ - Intervention Image configuration file
+
+Changed
+- Remove the link in the URL column on Themes Pages
+
+[v2.0.1] - 2023-08-25
+Fixed 
+- The DataTables 'Attempt to read property "name" on null' error appears after deleting the parent category
+- Problem with Logo header on mobile view
+- Disqus missing
+- Cannot change Display language options
+- The language item caanot be activated/deactivated
+
+[v2.0.0] - 2023-08-20
+Added
+- Video Post
+- Audio Post
+- layout and content can be customized
+- add system mode color scheme
+
+Changed
+- Upgrade to Laravel 10
+- Text editor from summernote to TinyMCE
+- Renamed Google Analytics ID to Measurement ID
+- Renamed Aanalytics View ID to Property ID 
+- Translation editor
+- Color scheme icon: dark mode, light mode, system mode
+- etc
+
+Fixed 
+- Google Analytics
+- Other bugs
+
+[v1.3.4] - 2023-06-10
+Fixed
+- Error 503 when accessing post details that have category
+- CSS: The color of the pagination number when active
+- Fixed attempt to read property "parent" on null on homepage
+
+Changed
+- Posts helper: display thumbnail images in edited posts
+
+[v1.3.3] - 2023-05-22
+Added
+- Custom Open Graph Image per Page
+- Supports Sub Categories
+
+Fixed
+- Can't deactivate language in Localization > Language menu
+- Can't delete Sub Menu
+- Error saving Menu When Any Menu Item is deleted
+
+[v1.3.2-4] - 2023-04-27
+Fixed
+- Post image not showing
+- Error sitemap
+- Post error page when opened by a different user
+
+[v1.3.2-3] - 2022-10-10
+Fixed
+- Can't delete social media site links
+- ad image not showing
+- minor bug
+
+Removed
+- package consoletvs/charts
+
+[v1.3.2-2] - 2022-10-05
+Fixed
+- Site Social Media
+- Permalink
+- Image ad
+- change favicon
+- change logo 
+- Update Settings
+- Env-editor blank
+
+[v1.3.2-1] - 2022-07-24
+Fixed
+- Display a blank image on the edit page
+
+Removed 
+- Check php symlink extension
+
+[v1.3.2] - 2022-07-19
+
+Added
+- Support RTL for dashboard
+- Support Dark Mode for theme
+- Image for category
+- shared hosting version and 
+- Disk 'sharedhosting' on Filesystem Disks for custom storage
+- Env configuration for custom disk filesystem in env file
+
+Changed
+- Image upload view
+- Display of dashboard page headings and footers condensed for mobile screens
+- Storage using public path instead of storage path (for the shared hosting version)
+
+Fixed
+- All issues found in previous versions
+
+Removed
+- The amount of data in the title on the page
+
